@@ -1,15 +1,15 @@
 #include <stdio.h>
 /**
- * main - Entry point print 1 - 10
+ * main - Entry point print lower case in reverse
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-int i;
-for (i = 0; i < 10; i++)
+char str;
+for (str = 'z'; str <= 'a'; str--)
 {
-printf("%d", i);
+putchar(str);
 }
 putchar('\n');
 return (0);

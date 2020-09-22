@@ -3,16 +3,16 @@
 
 
 /**
- * main - print hello world
+ * main - print Holberton
  *
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is ser appropriately.
+ * Return: Always 0 (Success)
+ * 
  */
 
 int main(void)
 {
-char c[10] = "Holberton";
+char *c = "Holberton";
 int i = 0;
 
 for (i = 0; i <= 9; i++)

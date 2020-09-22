@@ -1,28 +1,19 @@
-#include <stdio.h>
-#include <unistd.h>
-
+#include "holberton.h"
 
 /**
- * main - print Holberton
- *
+ * main - Entry point print Holberton
  *
  * Return: Always 0 (Success)
- * 
  */
 
 int main(void)
 {
-char *c = "Holberton";
-int i = 0;
-
+char hol_name[9] = "Holberton";
+int  i;
 for (i = 0; i <= 9; i++)
 {
-putchar(c[i]);
+_putchar(hol_name[i]);
 }
-
-putchar('\n');
-
-
+_putchar('\n');
 return (0);
-
 }

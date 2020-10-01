@@ -16,8 +16,8 @@ int i;
 i = 0;
 while (i < n && src[i] != '\0')/** Stop at the null character*/
 {
-i++;
 dest[i] = src[i]; /**copy the characters of dest to src */
+i++;
 }
 while (i < n)
 {

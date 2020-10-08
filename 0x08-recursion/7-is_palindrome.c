@@ -2,49 +2,64 @@
 #include <stdio.h>
 
 int check(char *, int);
-int len(char *);
+int length(char *);
 
 /**
  * is_palindrome - checks if a string is a palindrome
- * @s: string to be checked
- * Return: 1 if palindrome and 0 if not
+ * @s: the string to be checked
+ * Return: 1 if the string is palindrome otherwise 0
  */
 
 int is_palindrome(char *s)
 {
-int y;
-y = len(s);
-return (check(s, y - 1));
+int leng;
+leng = length(s);
+return (check(s, leng - 1));
 }
 /**
- * len - returns the lenght of the string
- * @s: string to be checked 
- * Return: the lenght of the string
+ * length - returns the length of a string
+ * @s: the string to be checked
+ * Return: the length of the string @s
  */
-
-int len(char *s)
+int length(char *s)
 {
 if (*s != '\0')
 {
-return (1 + len(s + 1));
+return (1 + length(s + 1));
 }
 return (0);
 }
+
 /**
  * check - checks if a string is a palindrome
- * @s: string to be checked
- * @l: length of the string
- * Return: 1 if palindrome
+ * @s: the string to be checked
+ * @leng: the length of the string
+ * Return: 1 if the string is palindrome otherwise 0
  */
-int check(char *s, int l)
+
+int check(char *s, int leng)
 {
-if (*s != s[l])
+if (*s != s[leng])
 {
 return (0);
 }
-if (len == 0 || len == 1)
+if (leng == 0 || leng == 1)
 {
 return (1);
 }
-return (check(s + 1, len - 2));
+return (check(s + 1, leng - 2));
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

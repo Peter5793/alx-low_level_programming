@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
  * is_prime_number - find the prime number
  * @n : interger
@@ -18,7 +18,11 @@ return (_prime(n, n - 1));
  */
 int _prime(int n, int div)
 {
-if (div == 0 && n < 0)
+if (div == 0)
+{
+return (0);
+}
+if (n < 0)
 {
 return (0);
 }

@@ -29,8 +29,10 @@ for (c = 0; c < ac; c++)
 for (d = 0; av[c][d] != '\0'; d++)
 {
 *str = av[c][d];
+str++;
 }
 *str = '\n';
+str++;
 }
 return (str2);
 }

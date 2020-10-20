@@ -28,7 +28,6 @@ _putchar(n + '0');
 _putchar(':');
 _putchar(o + '0');
 _putchar(p + '0');
-_putchar('\n');
 }
 }
 }

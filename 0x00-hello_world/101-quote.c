@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include <unistd.h>
 /**
- * main - check print statement
- * Return: 1
- **/
+ * main- Entry point
+ *  
+ * Return: ALways 0 (success)
+ */
 int main(void)
 {
-	fprintf(stderr, "and that piece of art is useful - Dora Korpar, 2015-10-19,");
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n",59);
 	return (1);
 }

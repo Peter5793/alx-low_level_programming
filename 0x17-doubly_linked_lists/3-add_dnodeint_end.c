@@ -1,9 +1,9 @@
 #include "lists.h"
 /**
- * add_dnodeint_end - adds a new node to the end  of the list
+ * add_dnodeint_end - adds a node at the end of a double linked list
  * @head: pointer to the first node
- * @n: interger to be copied
- * Return: NULL if fail
+ * @n: number to fill the node
+ * Return: address of the new element / NULL if failed
  **/
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {

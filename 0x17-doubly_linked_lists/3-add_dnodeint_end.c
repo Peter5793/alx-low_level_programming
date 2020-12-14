@@ -4,7 +4,7 @@
  * @head: pointer to the first node
  * @n: interger to be copied
  * Return: NULL if fail
- */
+ **/
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
 	dlistint_t *temp, *new_node;

@@ -13,3 +13,5 @@ Function that free a double linked list
 ### Task 5
 Function that returns the nth node of double-linked list
 -Prototype : ```dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)```
+### Task 6
+Function that returns the sune of all the data in a double linked list

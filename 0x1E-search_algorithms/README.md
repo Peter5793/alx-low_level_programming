@@ -10,7 +10,7 @@
 * What is a binary search
 * What is the best search algorithm to use depending on your needs
 
-### Info
+### Info on the Time Complexity format
 
 * O(1)
 * O(n)
@@ -80,5 +80,52 @@ Value checked array[6] = [6]
 Value checked array[7] = [7]
 Value checked array[8] = [-1]
 Value checked array[9] = [9]
+Found 999 at index: -1
+```
+## Binary Search
+A function that searches for a value in a sorted array of integers using the [Binary search algorithm](https://alx-intranet.hbtn.io/rltoken/SnveFJhSDE7o8bEx-kGGpA)
+
+* Prototype : ```int binary_search(int *array, size_t size, int value);```
+
+```
+0x1E-search_algorithms$ cat 1-main.c
+#include <stdio.h>
+#include <stdlib.h>
+#include "search_algos.h"
+
+/**
+ * main - Entry point
+ *
+ * Return: Always EXIT_SUCCESS
+ */
+int main(void)
+{
+        int array[] = {
+	        0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+	    };
+	        size_t size = sizeof(array) / sizeof(array[0]);
+
+    printf("Found %d at index: %d\n\n", 2, binary_search(array, size, 2));
+    printf("Found %d at index: %d\n\n", 5, binary_search(array, 5, 5));
+    printf("Found %d at index: %d\n", 999, binary_search(array, size, 999));
+	        return (EXIT_SUCCESS);
+}
+
+0x1E-search_algorithms$ gcc -Wall -Wextra -Werror -pedantic 1-main.c 1-binary.c -o 1-binary
+@0x1E-search_algorithms$ ./1-binary
+Searching in array: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Searching in array: 0, 1, 2, 3
+Searching in array: 2, 3
+Found 2 at index: 2
+
+Searching in array: 0, 1, 2, 3, 4
+Searching in array: 3, 4
+Searching in array: 4
+Found 5 at index: -1
+
+Searching in array: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
+Searching in array: 5, 6, 7, 8, 9
+Searching in array: 8, 9
+Searching in array: 9
 Found 999 at index: -1
 ```

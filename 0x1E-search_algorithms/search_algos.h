@@ -1,9 +1,11 @@
-#ifndef _SEARCH_ALGOS
-#define _SEARCH_ALGOS
+#ifndef _SEARCH_ALGOS_H
+#define _SEARCH_ALGOS_H
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <math.h>
+
 /**
  * prototypes
  */
